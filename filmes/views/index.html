@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #fff, #f0f0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.botao {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(238, 90, 36, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(238, 90, 36, 0.6);
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+}
+
+.botao:active {
+    transform: translateY(-2px);
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+hr {
+    width: 300px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    border: none;
+    margin-top: 3rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .botao {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+  </style>
+
+
+
+    <title>The Games</title>
+
+    <h1>Welcome to the NeTGlits</h1>
+
+    <button class="botao"><a href="http://127.0.0.1:5000/lista">proxima pagina </a></button>
+    
+
+    <hr>
+</head>
+<body>
+    
+</body>
+</html>
