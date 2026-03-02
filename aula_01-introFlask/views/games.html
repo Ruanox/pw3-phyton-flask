@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
+<style>
+
+
+
+
+</style>
+
 </head>
 <body>
     <h1>Games</h1>
 
-    
-   
+    <button><a href="https://www.google.com/search?q=pcman&client=firefox-b-d&hs=4sjU&sca_esv=7d344b0fa4f660b1&sxsrf=ANbL-n64LGvEtTS9T66KKA9wzlkIAULiig%3A1771865914697&ei=OoecacOlKrDc1sQPoqSk2AI&biw=1920&bih=946&gs_ssp=eJzj4tDP1TfIKomvMGD0Yi1Izk3MAwAuVwVS&oq=pcma&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHBjbWEqAggAMgUQLhiABDIFEAAYgAQyCxAAGIAEGLEDGIMBMgUQABiABDILEAAYgAQYsQMYgwEyBRAAGIAEMgcQABiABBgKMgUQABiABDIFEAAYgAQyBRAAGIAEMhQQLhiABBiXBRjcBBjeBBjgBNgBAkinIVCRBFjTFHADeAGQAQSYAZ8BoAHyEaoBBDAuMTi4AQPIAQD4AQGYAgigAusFqAIUwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIGEAAYFhgewgIWEAAYgAQYQxi0AhjnBhiKBRjqAtgBAcICFhAuGIAEGEMYtAIY5wYYigUY6gLYAQHCAhAQABgDGLQCGOoCGI8B2AECwgIQEC4YAxi0AhjqAhiPAdgBAsICChAuGIAEGEMYigXCAgoQABiABBhDGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICCxAuGIAEGLEDGIMBwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjgBNgBAsICCBAAGIAEGLEDwgINEAAYgAQYsQMYQxiKBcICDhAAGIAEGLEDGIMBGIoFmAMP8QXnDIF8abimLIgGAZAGDLoGBAgBGAi6BgYIAhABGAqSBwMzLjWgB4BtsgcDMC41uAfGBcIHBTItNS4zyAdBgAgA&sclient=gws-wiz-serp">Pacman</a>  </button>
+   <ul>
+<li>
+    <a href="/">voltar para index</a>
+</li>
+<li>
 
+     <a href="/consoles">ir para consoles</a>
+</li>
+
+   </ul>
+
+<h2>Jogo em destaque</h2>
+<p>O mais jogado da semana</p>
+<ul>
+    {#esse é um comentario em jinja 2#}
+<li>Titulo:{{titulo}}  </li>   
+<li>ano:{{ano}}</li>
+<li>categoria:{{categoria}}</li>
+<li>O jogo: {{titulo}} tem {{2026-ano}} anos desde seu lançamento</li>
+</ul>
+<h3>Top players</h3>
+
+<ol>
+    {% for jogador in jogadores:  %}
+<li>{{jogador}}</li>
+{% endfor %}
+
+
+</ol>
 </body>
 </html>

@@ -16,15 +16,32 @@ def home():
     return render_template('index.html')
     
 
-@app.route('/games')
+@app.route('/games') 
+#criando variaveis ára a rota de gmaes
 
 def games():
-    return render_template('games.html')
-
+    titulo = "portal 2"
+    ano = 2011
+    categoria = "Puzze"
+    jogadores = ['Marcos','Richard','Miguel','Renato','Pedro']
+    #Enviando as variaveis para o HTML
+    return render_template('games.html',
+                        titulo =titulo,
+                        ano =ano,
+                        categoria =categoria,
+                        jogadores = jogadores)
+                             
 @app.route('/consoles') 
 
 def consoles():
-    return render_template('consoles.html')
+    #criando um objeto
+    
+    console = {"Nome": "Playstation 2",
+             "Fabricante":"Sony",
+             "Ano": 2000} 
+ 
+    return render_template('consoles.html',
+                        console = console)
  
  
  

@@ -8,7 +8,19 @@
 <body>
      <h1>Consoles</h1>
 
- <a href="https://romsfun.com/roms/ps3/">ps3</a>
+  
+    <ul>
+     <li><a href="/">ir para index</a></li>
+     <li><a href="/games">ir para Games</a></li>
+     <h2>Consoles em destaque</h2>
+   {% for chave, valor in console.items() %} 
 
+    <details> 
+      <summary>{{chave}}</summary>
+      <p>{{valor}}</p>
+    </details>  
+
+   {% endfor %}
+    </ul>
 </body>
 </html>
