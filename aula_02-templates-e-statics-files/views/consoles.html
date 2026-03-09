@@ -1,0 +1,22 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+
+     <h1>Consoles</h1>
+
+  
+    <ul>
+     <li><a href="/">ir para index</a></li>
+     <li><a href="/games">ir para Games</a></li>
+     <h2>Consoles em destaque</h2>
+   {% for chave, valor in console.items() %} 
+
+    <details> 
+      <summary>{{chave}}</summary>
+      <p>{{valor}}</p>
+    </details>  
+
+   {% endfor %}
+    </ul>
+
+    {%  endblock content %}
