@@ -1,12 +1,12 @@
 {% extends 'base.html'  %}
 {% block content %}
-<h1>Bem vindo ao The Games</h1>
+<main>
+
+
  <h3>Seu site favorito de jogos</h3>
  <hr>
- <ul>
-<li> <a href="/games">Pagina de Games</a></li>
-<li><a href="/consoles">Pagina de consoles</a></li>   
 
- </ul>
 
+ <img src="{{url_for('static',filename='/imgs/cyberpunk.jpg')}}" alt="logo da pagina" width="1000px" >
+ </main>
  {% endblock content   %}
