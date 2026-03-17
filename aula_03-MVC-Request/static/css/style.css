@@ -1,0 +1,43 @@
+/* configuração universais */
+
+* {
+  margin: 0;
+  padding: 0;   
+}
+/* estilos gerais */
+body{
+font-family: "Segoe UI";
+color: black;
+background-color: #969292;
+line-height: 1.5;
+}
+
+header {
+background-color: #1f1f1f;
+color : #ffffff;
+padding:0.5 rem;
+text-align: center;
+}
+footer{
+    background-color: #4468cc;
+    color : #ffffff;
+    margin : 2.3 rem;
+   padding: 0.5rem 0.75rem; 
+   text-align: center;
+}
+main {
+    width : 1300px;
+    min-height: 100vh;
+    margin: 1.5rem auto;
+    padding: 1rem 3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0,0,0.08 );
+}
+img {
+    border-radius: 1.5rem;
+    width: 100%;
+}
+h1,h2,h3,p{
+    padding: 10px;
+}

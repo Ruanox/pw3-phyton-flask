@@ -1,0 +1,27 @@
+{%  extends 'base.html' %}
+{% block content  %}
+<main> 
+    <h1>Games</h1>
+
+   
+
+<h2>Jogo em destaque</h2>
+<p>O mais jogado da semana</p>
+<ul>
+    {#esse é um comentario em jinja 2#}
+<li>Titulo:{{titulo}}  </li>   
+<li>ano:{{ano}}</li>
+<li>categoria:{{categoria}}</li>
+<li>O jogo: {{titulo}} tem {{2026-ano}} anos desde seu lançamento</li>
+</ul>
+<h3>Top players</h3>
+
+<ol>
+    {% for jogador in jogadores:  %}
+<li>{{jogador}}</li>
+{% endfor %}
+
+
+</ol>
+   </main>
+ {% endblock content %}
