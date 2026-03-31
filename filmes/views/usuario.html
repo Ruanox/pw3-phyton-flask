@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Sua conta:</h2>
+<hr>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        </tr>
+    </thead>
+    <tbody>
+  {% for usuario in listaUsuario %}
+        <tr>
+         <td>{{usuario.nome}}</td>
+         <td>{{usuario.email}}</td>
+         <td>{{usuario.telefone}}</td>
+
+        </tr>
+
+    </tbody>
+
+
+{% endblock content %}

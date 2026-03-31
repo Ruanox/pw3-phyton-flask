@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Filmes cadastrados</h2>
+<hr>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Título</th>
+            <th>Ano</th>
+            <th>Gênero</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for filme in listaFilmes %}
+        <tr>
+            <td>{{ filme.titulo }}</td>
+            <td>{{ filme.ano }}</td>
+            <td>{{ filme.genero }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

@@ -3,28 +3,15 @@
 from flask import Flask, render_template    #1 ° é o pacote e depois a classe
  #carregando o flask na variavel na variavel"app"
  #declarando variavel no phyton
+ 
+from controllers import routes
+ 
 app = Flask(__name__, template_folder='views') 
  # Variaveis com __ são variaveis de ambiente no phyton
  # __name__ representa o nome da aplicação
  
- #CRIANOD A ROTA PRINCIPAL DO SITE
+routes.init_app(app)
  
-@app.route('/')       
-
-#def cria funções no python
-def home():
-    return render_template('index.html')
-    
-
-@app.route('/lista')
-
-def lista():
-    return render_template('lista.html')
-
-@app.route('/formulario') 
-
-def formulario():
-    return render_template('formulario.html')
  
  
  
